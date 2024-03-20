@@ -2,8 +2,8 @@
 import inquirer from "inquirer";
 import Choices from "inquirer/lib/objects/choices.js";
 const answer = await inquirer.prompt([
-  { massage: "enter first number", type: "number", name: "firstNumber" },
-  { massage: "enter second number", type: "number", name: "secondNumber" },
+  { massage: "enter your first number", type: "number", name: "firstNumber" },
+  { massage: "enter your second number", type: "number", name: "secondNumber" },
   {
     massage: "select one of the operators from action",
     type: "list",
@@ -21,4 +21,5 @@ if (answer.operator === "Addition") {
   console.log(answer.firstNumber / answer.secondNumber);
 } else {
   console.log("please select valid operator");
-}echo "# simple-calculator" >> README.md
+}
+console.log ("the end");
